@@ -55,3 +55,49 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 .carousel__item img {
   /* Affiche l'image comme un bloc - https://developer.mozilla.org/fr/docs/Web/CSS/display */
 }
+
+
+.carousel__controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.carousel__button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+
+.carousel__button--prev {
+  transform: rotate(180deg);
+}
+
+
+.carousel__container {
+  display: flex;
+  gap: 16px;
+  overflow: scroll;
+  margin-left: -24px;
+  margin-right: -24px;
+  scroll-snap-type: x mandatory;
+}
+
+
+.carousel__item {
+  flex: 1 0 100% ;
+  scroll-snap-align: center;
+  
+}
+
+.carousel__item img {
+  display: block;
+
+}
